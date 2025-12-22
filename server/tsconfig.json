@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		/* Runtime */
+		"target": "ES2023",
+		"lib": ["ES2023"],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+
+		/* Output */
+		"outDir": "dist",
+		"rootDir": "src",
+		"sourceMap": true,
+		"declaration": false,
+
+		/* Interop */
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+
+		/* DX / Safety */
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"useDefineForClassFields": true,
+
+		/* Node */
+		"types": ["node"]
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules", "dist"]
+}

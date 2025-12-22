@@ -1,0 +1,29 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"check": "biome check ./",
+		"check:fix": "biome check --write ./",
+		"check:ci": "biome ci ./",
+		"start": "tsx src/server.ts",
+		"dev": "tsx watch src/server.ts",
+		"typecheck": "tsc --noEmit",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^5.2.1",
+		"socket.io": "^4.8.2",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.0.3",
+		"@types/socket.io": "^3.0.2"
+	}
+}
