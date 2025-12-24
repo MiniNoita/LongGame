@@ -1,6 +1,6 @@
 import type { Card } from './card';
 
-class DiscardPile {
+export class DiscardPile {
   public discardCards: Card[] = [];
 
   //add a card to the discard pile
