@@ -2,6 +2,11 @@
 export type Suit = 'H' | 'D' | 'C' | 'S';
 export const SUITS = ['H', 'D', 'C', 'S'] as const;
 
+/*
+  same number xtimes
+  same kind/suit straight
+*/
+
 export type Rank =
   | 'A'
   | '2'
